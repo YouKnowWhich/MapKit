@@ -1,0 +1,23 @@
+import SwiftUI
+import MapKit
+
+struct MapView: UIViewRepresentable {
+    
+    // 表示する View を作成するとき実行
+    func makeUIView(context: Context) -> MKMapView {
+        // MKMapViewのインスタンスを生成
+        MKMapView()
+    }
+    
+    // 表示した View が更新される度に実行
+    func updateUIView(_ uiView: MKMapView, context: Context) {
+        
+    }
+    
+}
+
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapView()
+    }
+}
